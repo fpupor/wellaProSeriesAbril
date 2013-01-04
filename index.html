@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+
+	<link rel="apple-touch-icon" href="./img/icon72.png" /> <!-- Iphone / Ipad 72x72 -->
+	<link rel="apple-touch-startup-image" href="./img/splash.png" /><!-- Iphone 320x460 / Ipad 1004x768 -->
+	<meta name="viewport" content="user-scalable=no, width=device-width" /> <!-- Prevent Scaling -->
+	<meta name="apple-mobile-web-app-capable" content="yes" /><!-- Eliminate url and button bars if added to home screen -->
+	
+	<script src="phonegap.js"></script>
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+	<!--meta name="apple-mobile-web-app-status-bar-style" content="black"-->
+	<!-- <script>(function(){var a;if(navigator.platform==="iPad"){a=window.orientation!==90||window.orientation===-90?"img/startup-tablet-landscape.png":"img/startup-tablet-portrait.png"}else{a=window.devicePixelRatio===2?"img/startup-retina.png":"img/startup.png"}document.write('<link rel="apple-touch-startup-image" href="'+a+'"/>')})()</script> -->
+	<!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
+	
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="stylesheet" href="css/style.css?v3">
+	<link rel="stylesheet" href="css/hair.css">
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="js/libs/jquery-1.7.1.min.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/EventBus.js"></script>
+</head>
+
+<body>
+	<div id="information" class="hide"></div>
+	<div id="general">
+		<img src="img/shim.gif" id="interact" class="" />
+		<img src="img/logo.png" id="logo" class="hide" />
+		<img src="img/frame.jpg" id="background" class="hide" />
+		<img src="img/frame.jpg" id="poster" class="hide" />
+	</div>
+	<div id="step1">
+		<img src="img/txt0.png" id="texto0" class="hide" />
+		<video id="vidL" poster="img/frame.jpg" class="hide">
+			<source src="vdo/lado.mp4" type="video/mp4" />
+		</video>
+		<video id="vidD" poster="img/frame.jpg" class="hide">
+			<source src="vdo/direita.mp4" type="video/mp4" />
+		</video>
+		<video id="vidE" poster="img/frame.jpg" class="hide">
+			<source src="vdo/esquerda.mp4" type="video/mp4" />
+		</video>
+	</div>
+	<div id="step2">
+		<img src="img/txt1.png" id="texto1" class="hide" />
+	</div>
+	<div id="step3">
+		<img src="img/txt2.png" id="texto2" class="hide" />
+	</div>
+	<div id="step4">
+		<img src="img/txt3.png" id="texto3" class="hide" />
+	</div>
+	<div id="stepFinal">
+		<img src="img/txtFim.png" id="txtFim" class="hide" />
+		<img src="img/btFim0.png" id="btFim0" class="hide" />
+		<img src="img/btFim1.png" id="btFim1" class="hide" />
+		<img src="img/fim.jpg" id="backgroundFim" class="hide" />
+	</div>
+	<script type="text/javascript" src="js/EventBus.js"></script>
+	<script type="text/javascript" src="js/nodelay.js"></script>
+	<script type="text/javascript" src="js/interact.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('load', onloadEvent, false);
+	</script>
+</body>
+</html>
